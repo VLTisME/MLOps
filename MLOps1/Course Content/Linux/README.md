@@ -53,6 +53,9 @@ Here’s a basic overview of the Linux directory structure:
 | `/sbin`   | System binaries: essential system administration commands (e.g., `reboot`, `shutdown`). |
 | `/local`  | Locally installed software and user data. |
 
+![image](https://linuxhandbook.com/content/images/2020/06/linux-directory-structure.png)
+[Source](https://linuxhandbook.com/linux-directory-structure/)
+
 ---
 
 ## 💻 Shell, Console, Terminal Explained
@@ -118,6 +121,9 @@ A basic command line has:
 > `r = read`, `w = write`, `x = execute`.
 
 Use `chmod` to change permissions, e.g., `chmod 777 filename` (full access).
+
+![image](https://www.reddit.com/media?url=https%3A%2F%2Fpreview.redd.it%2Fvkxuqbatopk21.png%3Fwidth%3D320%26crop%3Dsmart%26auto%3Dwebp%26s%3D96478a76704cce2fcdf85f234fe54708d285a038)
+[Source](https://www.reddit.com/r/linux/comments/ayditr/chmod_cheatsheet/)
 
 ---
 
