@@ -1,7 +1,5 @@
 # Introduction
-This is a place for me to jot down all stuff about MLOps that I study
-
-# This course has four parts, below is an overview for each part.
+This is a place for me to jot down all stuff about MLOps that I study. This course has four parts, below is an overview for each part.
 
 ## MLOps1
 ### Objective
