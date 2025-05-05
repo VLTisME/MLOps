@@ -576,6 +576,34 @@ Ensuring your project works for others (or yourself in the future) requires spec
     *   **Lock File:** Tools like Poetry and UV generate a **lock file** (`poetry.lock`, `uv.lock`). This file pins the exact version of *every* dependency, including transitive ones, ensuring deterministic installs [7].
     *   **How UV/Poetry work:** When you add or install dependencies, these tools read `pyproject.toml`, calculate a consistent set of package versions that satisfy all requirements (dependency resolution), and record the outcome in the lock file [7]. When you install, they use the lock file to get the exact versions. UV is exceptionally fast at this dependency resolution due to being written in Rust and using advanced algorithms [5, 6].
     *   **Why use them?** They address the limitations of `requirements.txt` by providing robust dependency resolution, managing transitive dependencies automatically, and making it easier to specify and manage different sets of dependencies for different purposes [6]. They help avoid version inconsistencies that can arise with simple `pip freeze` and manual management [6].
+    
+**Example**:
+pyproject.toml file
+```
+[dependencies]
+... # List shared dependencies here
+Dependencies for specific groups, such as development or testing dependencies, can be defined under [dependency-groups]:
+[dependency-groups]
+dev = [
+    ... # Dev dependencies
+]
+server = [
+    jupyterhub = [
+        # Server dependencies like jupyterhub
+    ]
+]
+test = [
+    ... # Test dependencies
+]
+ml = [
+    ... # Machine learning dependencies
+]
+```
+
+**Note**: 
+- pyproject.toml describes the dependencies and build info for a single project.<br>
+- It belongs in the root folder of the specific project—not in the folder containing multiple different virtual environments.<br>
+- Virtual environments (like .venv/, env/, or conda’s envs) are usually in a separate hidden subfolder within each project (or globally managed elsewhere by Conda).<br>
 
 ### Comparing Pip, Conda, Mamba, UV
 
