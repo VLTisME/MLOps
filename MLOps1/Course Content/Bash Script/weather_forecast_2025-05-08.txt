@@ -1,0 +1,25 @@
+📅 Weather forecast for Ho Chi Minh City (10.8230, 106.6296) | Next 4 days
+Updated: Thu May  8 11:11:02 PM +07 2025
+
+Legend: ☀️=Clear  🌤️=Partly Cloudy  ☁️=Cloudy  🌧️=Rain  ⛈️=Thunderstorm  ❄️=Snow  🌫️=Mist/Fog
+
+==== 2025-05-09 ====
+🌤️  [Morning]  Broken clouds, 35°C (Humidity: 32%)
+🌧️  [Afternoon]  Light rain, 33°C (Humidity: 57%)
+☁️  [Evening]  Overcast clouds, 30°C (Humidity: 68%)
+
+==== 2025-05-10 ====
+☁️  [Morning]  Overcast clouds, 37°C (Humidity: 39%)
+🌧️  [Afternoon]  Light rain, 32°C (Humidity: 55%)
+☁️  [Evening]  Overcast clouds, 29°C (Humidity: 69%)
+
+==== 2025-05-11 ====
+🌧️  [Morning]  Light rain, 34°C (Humidity: 47%)
+🌧️  [Afternoon]  Light rain, 30°C (Humidity: 67%)
+🌧️  [Evening]  Moderate rain, 29°C (Humidity: 73%)
+
+==== 2025-05-12 ====
+🌧️  [Morning]  Moderate rain, 34°C (Humidity: 49%)
+🌧️  [Afternoon]  Light rain, 28°C (Humidity: 74%)
+🌧️  [Evening]  Moderate rain, 27°C (Humidity: 81%)
+
