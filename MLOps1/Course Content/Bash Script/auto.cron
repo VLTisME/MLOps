@@ -1,0 +1,4 @@
+*/10 * * * * cd "/home/vltisme/Desktop/Github/MLOps/MLOps1/Course Content/Bash Script" && ./notifyme.sh
+
+
+
