@@ -637,3 +637,17 @@ crontab -l
 3. **Advanced Scheduling:**  
    - [Apache Airflow](https://airflow.apache.org/)  
    - [Prefect](https://www.prefect.io/)
+   
+   
+   
+# Some notes
+1. 
+```bash
+sh test1.sh
+```
+is different from
+```bash
+.\test1.sh
+```
+
+because even when in test1.sh has #!/bin/bash, the first one will force the script to run under sh, while the second one runs under bash as specified in the .sh file 
