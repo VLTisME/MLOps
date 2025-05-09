@@ -48,7 +48,7 @@ This workflow streamlines and standardizes interactions across diverse systems.
 
 APIs function as a central hub that connects multiple applications, allowing them to send and receive information seamlessly.  
 
-![API Communication Diagram](https://miro.medium.com/v2/resize:fit:900/1*n4yogkbdUj8IM8U8qwu2xQ.png)  
+[![image.png](https://i.postimg.cc/Kvbc322X/image.png)](https://postimg.cc/JtTCSS0K)
 
 *Figure: Example of "How APIs Work". Application A and Application B exchange data through an API, which manages and standardizes their communication.*  
 
@@ -86,7 +86,8 @@ HTTP methods (also known as verbs) represent standardized ways to interact with 
 - **DELETE:** Remove a resource.  
 
 **Visualization:**  
-![HTTP Methods CRUD](https://www.restapitutorial.com/images/http-crud.png)  
+[![image.png](https://i.postimg.cc/L6yd4K43/image.png)](https://postimg.cc/vc62XKV4)
+**Source**: atatus.com
 
 ---  
 
@@ -108,8 +109,8 @@ REST (Representational State Transfer) APIs use standard HTTP methods and status
   - YouTube API  
   - Twitter API  
 
-**Visualization:**  
-![REST API Example](https://khurshidbek-coder.github.io/assets/images/REST-API.png)  
+[![image.png](https://i.postimg.cc/5NzKHXVg/image.png)](https://postimg.cc/dLqjptDZ)
+**Source**: Unknown
 
 ---  
 
@@ -122,8 +123,8 @@ gRPC is built on HTTP/2 and uses binary data transfer (via Protocol Buffers) ins
   - Supports streaming, bi-directional communication  
   - Excellent for microservices and high-performance applications  
 
-**Visualization:**  
-![gRPC vs REST](https://miro.medium.com/v2/resize:fit:800/1*_NsVG2kTtQpfk9sl_LhKjg.png)  
+[![image.png](https://i.postimg.cc/vHXgtzbZ/image.png)](https://postimg.cc/xcJ10LXw)
+**Source**: marutitech.com
 
 ---  
 
@@ -136,8 +137,8 @@ WebSocket enables real-time, bidirectional communication using HTTP upgrades. It
   - Persistent connection  
   - Great for scenarios needing instant updates  
 
-**Visualization:**  
-![WebSocket Real-time Communication](https://www.oreilly.com/api/v2/epubs/9781787284962/files/assets/fcf3f7e4-7f1c-43cc-8f6d-445302392b34.png)
+[![image.png](https://i.postimg.cc/BZKBpRVQ/image.png)](https://postimg.cc/grGhktpf)
+**Source**: Pubnub.com
 
 
 ## 3.4 REST API  
