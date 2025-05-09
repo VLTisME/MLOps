@@ -19,6 +19,93 @@ An **API**, or **Application Programming Interface**, is a powerful tool that de
 
 This workflow streamlines and standardizes interactions across diverse systems.  
 
+
+### Additional Note: How Does Google Search Work? How Does a Website UI Appear When You Enter a Domain?  
+
+#### 1. Domain Name Resolution  
+
+When you type a domain name (like `www.google.com`) into your browser, the process translates that human-readable name into a machine-usable IP address, which is necessary to locate and communicate with the website server. This translation happens through the **Domain Name System (DNS)**.  
+
+- **Why Domains?**  
+  IP addresses are hard to remember, so we use domains. DNS resolves domain names into IP addresses.  
+
+- **DNS (Domain Name System)**  
+  DNS is a global system that translates domain names into IP addresses.  
+
+#### 2. DNS Resolution Steps  
+
+When a browser needs the IP address for a domain, the lookup process generally follows these steps:  
+
+1. **DNS Cache Check:**  
+   - First, your system (browser, OS, router, or ISP) checks its local DNS cache.  
+   - If the domain was recently resolved, the answer is returned immediately from cache.  
+
+2. **If Not Cached, The Recursive DNS Lookup Begins:**  
+   a. The browser asks a DNS resolver (often your ISP’s).  
+   b. **Root Name Server:** Tells the resolver which Top-Level Domain (TLD) server to ask next.  
+   c. **TLD Server:** (e.g., `.com`, `.vn`) Points to the authoritative DNS server for the specific domain.  
+   d. **Authoritative DNS Server:** Knows the definitive mapping and provides the correct IP address for the requested domain.  
+
+> Note:  
+> Sometimes, if the IP is cached at any level (browser, OS, router, resolver), the DNS lookup doesn't need to complete all steps. Only domains not already cached go through the full process.  
+
+#### 3. What is an IP Address?  
+
+- The **IP address returned is the server’s IP address**—the public address on which the website is hosted, not your personal/local device's IP.  
+- Your device also has an IP (private on your network, public if visible to the wider internet, depending on NAT/router setup).  
+- **Fake IP** usually refers to techniques (like proxies, VPNs) that mask your real IP when accessing sites, for privacy or geo-unblocking.  
+
+#### 4. Establishing a Connection: TCP 3-Way Handshake  
+
+Once the IP address is obtained, your browser establishes a connection to the server, usually over TCP — a reliable protocol.  
+
+**TCP 3-way handshake:**  
+1. **SYN:** Client (e.g., your browser or phone) sends a SYN message to ask if the server is open for connection.  
+2. **SYN-ACK:** Server responds with SYN+ACK (saying ready and acknowledging).  
+3. **ACK:** Client sends ACK as confirmation.  
+
+Only after this handshake can data start flowing.  
+> TCP connections are usually short-lived—terminated after inactivity or explicitly closed.  
+
+- **TCP vs UDP:**  
+  - **TCP** guarantees delivery, order, and is used for websites, APIs, etc.  
+  - **UDP** is connectionless, faster but less reliable—good for livestreaming, real-time gaming, voice/video chats.  
+
+#### 5. Request and Rendering  
+
+After establishing the TCP connection, the browser sends an HTTP (or HTTPS) request for the website resources. The server responds with HTML (and often CSS, JS, images, etc.).  
+
+- The **browser parses HTML** to build the DOM (Document Object Model) and then visually renders the page—a process observable via browser devtools (“Inspect element”).  
+
+#### 6. More Advanced: OSA (“Open Systems Architecture”) Flow  
+
+Typically, "OSA" might refer to OSI (Open Systems Interconnection) layers, which describe data transmission in seven layers:  
+1. Application (HTTP, DNS)  
+2. Presentation (encryption, formatting)  
+3. Session  
+4. Transport (TCP/UDP)  
+5. Network (IP)  
+6. Data Link  
+7. Physical  
+
+Web requests traverse the stack from Application down to physical transmission (and back up at the server).  
+
+---  
+
+#### 7. Types of APIs  
+
+- **REST** (Representational State Transfer):  
+  Most common (90%+). Stateless, resource-based endpoints using HTTP methods.  
+
+- **Webhooks:**  
+  Event-based callbacks—server notifies client of changes/data.  
+
+- **SOAP (Simple Object Access Protocol):**  
+  XML-based messaging, strongly typed, used in enterprise systems.  
+
+- **GraphQL:**  
+  Allows clients to request precisely the data they need; single endpoint for flexible, efficient queries.  
+
 ---  
 
 ## 1.2 Objectives of the Lecture  
@@ -37,7 +124,7 @@ This workflow streamlines and standardizes interactions across diverse systems.
 
 1. **APIs are foundational** for software interactions, enabling the efficient exchange of data and commands between systems.  
 2. **REST APIs** are the most popular due to their simplicity and scalability. However, alternatives like **gRPC** and **WebSocket** serve more specialized use cases.  
-3. **FastAPI** is highlighted as a contemporary, high-performance framework for building APIs rapidly and efficiently.  
+3. **FastAPI** is highlighi lock in ted as a contemporary, high-performance framework for building APIs rapidly and efficiently.  
 4. **Testing and performance tuning** are essential steps in ensuring that APIs are reliable, maintainable, and production-ready.  
 
 ---  
